@@ -3,7 +3,10 @@ let ciudad = prompt("¿Que ciudad ha visitado?");
 let ciudades = [];
 if (ciudad !== null){
     while (ciudad.toUpperCase() != "SALIR") {
-        ciudades.push(ciudad);
+        if (ciudad.length > 0) {
+            ciudades.push(ciudad);
+        }
+
         ciudad = prompt("¿Que ciudad ha visitado?");
     }
     
